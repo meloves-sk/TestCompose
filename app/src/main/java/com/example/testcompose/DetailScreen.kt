@@ -22,7 +22,6 @@ import androidx.navigation.NavHostController
 
 @Composable
 fun DetailScreen(nav: NavHostController, id: Int) {
-    StrictMode.setThreadPolicy(StrictMode.ThreadPolicy.Builder().permitAll().build())
     var item by remember {
         mutableStateOf(Api.get<Item>("items/$id"))
     }

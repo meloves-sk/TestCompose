@@ -24,7 +24,6 @@ import androidx.navigation.NavHostController
 
 @Composable
 fun ListScreen(nav: NavHostController) {
-    StrictMode.setThreadPolicy(StrictMode.ThreadPolicy.Builder().permitAll().build())
     val items = remember {
         mutableStateListOf<Item>().apply {
             addAll(Api.get<List<Item>>("items"))

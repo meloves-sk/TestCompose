@@ -34,7 +34,6 @@ import androidx.navigation.NavHostController
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AddScreen(nav: NavHostController) {
-    StrictMode.setThreadPolicy(StrictMode.ThreadPolicy.Builder().permitAll().build())
     val context = LocalContext.current
     val categories = remember {
         mutableStateListOf<Category>().apply {
