@@ -13,7 +13,6 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         StrictMode.setThreadPolicy(StrictMode.ThreadPolicy.Builder().permitAll().build())
-        WindowCompat.setDecorFitsSystemWindows(window, true)
         setContent {
             TestComposeTheme {
                 val nav = rememberNavController()
